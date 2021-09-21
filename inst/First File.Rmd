@@ -63,12 +63,19 @@ data <- read.table(file = here::here("inst/extdata/data.txt"))
 
 ```
 
-## Including Plots
+## Explore Data
 
 You can also embed plots, for example:
 
-```{r pressure, echo=FALSE}
-plot(pressure)
+```{r IDA, echo=FALSE}
+
+#Exploratory data analysis
+  #Summarizing the data
+  summary(data)
+#Making frequency table
+table(data$rpurchase, data$coupon, useNA='always')
+
+
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
