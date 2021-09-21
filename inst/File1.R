@@ -1,5 +1,5 @@
+data <- read.table("inst/extdata/data.txt")
 
-getw
 #Exploratory data analysis
   #Summarizing the data
   summary(data)
